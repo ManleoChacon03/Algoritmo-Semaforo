@@ -1,8 +1,3 @@
-/**
- * Classe principal da aplicação, contendo o main e responsável também pela criação do JFrame.
- * @author Augusto Luiz Silva
- * @date: 10/04/18 
- */
 package view;
 
 import java.awt.Color;
@@ -34,9 +29,6 @@ public class Principal extends JFrame {
 		});
 	}
 	
-	/**
-	 * Método responsável pela criação das labels e button, assim como o seu posicionamento no JPanel
-	 */
 	public Principal() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(350, 5, 700, 720);
@@ -48,7 +40,7 @@ public class Principal extends JFrame {
 		
 		painel.setLayout(null);
 		
-		/*Fundo início*/
+	
 		JLabel fundoInicio = new JLabel();
 		fundoInicio.setBounds(0, 0, 700, 700);
 		fundoInicio.setIcon(new ImageIcon("img/fundo_inicio.png"));
@@ -65,7 +57,7 @@ public class Principal extends JFrame {
 		painel.add(btnInicio);
 		painel.add(fundoInicio);
 		
-		/*Semaforos Vermelho*/
+	
 		JLabel semaforoVermelho1 = new JLabel();
 		semaforoVermelho1.setIcon(new ImageIcon("img/semaforos/vermelho/semaforo1.png"));
 		semaforoVermelho1.setBounds(235, 185, 128, 43);
@@ -90,7 +82,7 @@ public class Principal extends JFrame {
 		
 		painel.add(semaforoVermelho4);
 		
-		/*Semaforos Verde*/
+	
 		JLabel semaforoVerde1 = new JLabel();
 		semaforoVerde1.setIcon(new ImageIcon("img/semaforos/verde/semaforo1.png"));
 		semaforoVerde1.setBounds(235, 185, 128, 43);
@@ -119,13 +111,12 @@ public class Principal extends JFrame {
 		semaforoVerde4.setVisible(false);
 		painel.add(semaforoVerde4);
 		
-		/*Fundo*/
-		
+
 		JLabel fundo = new JLabel();
 		fundo.setBounds(0, 0, 700, 700);
 		fundo.setIcon(new ImageIcon("img/fundo.png"));
 		
-		/*Carros*/
+	
 		
 		JLabel carro1 = new JLabel();
 		carro1.setIcon(new ImageIcon("img/carros/carro1.png"));
